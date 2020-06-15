@@ -1,0 +1,1618 @@
+@charset "UTF-8";
+@media screen and (min-width: 375px) {
+  body {
+    font-family: Toppan Bunkyu Midashi Mincho;
+  }
+  header {
+    background-color: #000000;
+    color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    padding: 15px;
+    opacity: .8;
+    z-index: 1;
+  }
+  header img {
+    display: block;
+  }
+  header .humburger-show {
+    position: absolute;
+    top: 18px;
+    right: 0;
+    padding: 10px 15px;
+    width: 50px;
+    height: 38px;
+    margin-right: 5px;
+  }
+  header ul {
+    position: relative;
+    display: none;
+  }
+  header .list-first::after {
+    content: '-いろはのこと-';
+    display: block;
+    font-size: 5px;
+    opacity: .7;
+    margin-top: 3px;
+  }
+  header .list-second::after {
+    content: '-宿泊ロッジ-';
+    display: block;
+    font-size: 5px;
+    opacity: .7;
+    margin-top: 3px;
+  }
+  header .list-third::after {
+    content: '-食工房/ラウンジ-';
+    display: block;
+    font-size: 5px;
+    opacity: .7;
+    margin-top: 3px;
+  }
+  header .list-forth::after {
+    content: '-体験プログラム-';
+    display: block;
+    font-size: 5px;
+    opacity: .7;
+    margin-top: 3px;
+  }
+  header .list-fifth::after {
+    content: '-ご予約-';
+    display: block;
+    font-size: 5px;
+    opacity: .7;
+    margin-top: 3px;
+  }
+  header h2 {
+    font-size: 19px;
+    margin: 0;
+    letter-spacing: 3px;
+    font-weight: 400;
+  }
+  header h2::after {
+    content: '-Yakushima Lodge  &  Food Atelier-';
+    display: block;
+    font-weight: 300;
+    letter-spacing: 0 !important;
+    font-size: 5px;
+    opacity: .7;
+    margin-top: 3px;
+  }
+  header span {
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 650px;
+    background-color: #333333;
+    opacity: .3;
+    z-index: -3;
+  }
+  .header-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: 75%;
+    position: absolute;
+    width: 100%;
+    height: 650px;
+    top: 0;
+    left: 0;
+  }
+  .header-bg img {
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 0;
+    width: 300px;
+  }
+  .header-bg.fadeout {
+    opacity: 0;
+    -webkit-transition: 3s ease-in-out;
+    transition: 3s ease-in-out;
+  }
+  .header-bg.fadein {
+    opacity: 1;
+    -webkit-transition: 3s ease-in-out;
+    transition: 3s ease-in-out;
+  }
+  .bg {
+    height: 574px;
+  }
+  .header-bg.bg--1 {
+    background-image: url(../images/slide/slide1.png);
+    background-position: center;
+    background-size: cover;
+  }
+  .bg .header-bg.bg--2 {
+    background-image: url(../images/slide/slide2.png);
+    background-position-x: center;
+    background-size: cover;
+  }
+  .header-contents-hide {
+    display: none;
+  }
+  .header-contents {
+    background-color: #000000;
+    color: #ffffff;
+    position: absolute;
+    opacity: .8;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    width: 85%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .header-contents h2 {
+    padding: 20px 0 0 30px;
+    font-size: 19px;
+    margin: 0;
+    letter-spacing: 3px;
+    font-weight: 400;
+  }
+  .header-contents h2::after {
+    content: '-Yakushima Lodge  &  Food Atelier-';
+    display: block;
+    font-weight: 300;
+    letter-spacing: 0 !important;
+    font-size: 5px;
+    opacity: .7;
+    margin-top: 3px;
+  }
+  .header-contents span {
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+  .header-contents .fa-times {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+  }
+  .header-contents ul {
+    list-style: none;
+    text-align: center;
+    padding: 60px 0;
+  }
+  .header-contents li {
+    padding-bottom: 30px;
+  }
+  .header-contents .list-first::after {
+    content: '-いろはのこと-';
+    display: block;
+    font-size: 12px;
+    opacity: .7;
+    margin-top: 3px;
+  }
+  .header-contents .list-second::after {
+    content: '-宿泊ロッジ-';
+    display: block;
+    font-size: 12px;
+    opacity: .7;
+    margin-top: 3px;
+  }
+  .header-contents .list-third::after {
+    content: '-食工房/ラウンジ-';
+    display: block;
+    font-size: 12px;
+    opacity: .7;
+    margin-top: 3px;
+  }
+  .header-contents .list-forth::after {
+    content: '-体験プログラム-';
+    display: block;
+    font-size: 12px;
+    opacity: .7;
+    margin-top: 3px;
+  }
+  .header-contents .list-fifth::after {
+    content: '-ご予約-';
+    display: block;
+    font-size: 12px;
+    opacity: .7;
+    margin-top: 3px;
+  }
+  .header-hide {
+    display: none;
+  }
+  .sns-share i {
+    font-size: 40px;
+    padding: 0 40px 20px 40px;
+  }
+  .about {
+    padding: 100px 0 190px 0;
+    position: relative;
+  }
+  .about h2 {
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 100px;
+    text-shadow: 0px 0px 20px #707070;
+  }
+  .about p {
+    font-size: 15px;
+  }
+  .about::after {
+    content: '';
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 50%;
+    height: 80%;
+    background-color: #707070;
+    opacity: .1;
+  }
+  .about-texts {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .about-texts .br-second {
+    display: none;
+  }
+  .about-texts .br-third {
+    display: none;
+  }
+  .about-japanese {
+    display: none;
+  }
+  .about-img1 {
+    width: 60%;
+  }
+  .about-photo-second {
+    position: relative;
+  }
+  .about-img2 {
+    width: 70%;
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .anchor {
+    text-align: right;
+    margin: 30px 20px 0 0;
+  }
+  .read-more {
+    border: 2px solid #707070;
+    color: #000000;
+    text-decoration: none;
+    padding: 13px 25px;
+    font-size: 12px;
+  }
+  .read-more:hover {
+    text-decoration: none;
+    color: #000000;
+  }
+  .about-photos {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  .lodge {
+    padding: 50px 0 30px 0;
+    background-color: #F8F8F8;
+  }
+  .lodge h2 {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  }
+  .lodge h2::after {
+    content: '- 宿泊ロッジ -';
+    margin-left: 10px;
+  }
+  .lodge p {
+    font-size: 15px;
+  }
+  .lodge-header {
+    position: relative;
+  }
+  .lodge-header::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 2px;
+    background-color: #000000;
+    opacity: .8;
+    margin: 30px 0 50px 0;
+    position: absolute;
+    top: 30px;
+    right: 55px;
+  }
+  .lodge-header-img {
+    width: 100%;
+  }
+  .lodge-header-img img {
+    width: 100%;
+  }
+  .lodge-text-area {
+    text-align: right;
+    position: relative;
+  }
+  .lodge-texts {
+    margin: 60px 0 30px 0;
+    background-color: #FFFFFF;
+    display: inline-block;
+    width: 75%;
+    padding: 22px;
+  }
+  .lodge-texts p {
+    text-align: left;
+    letter-spacing: 3px;
+    line-height: 24px;
+  }
+  .lodge-texts::before {
+    content: 'Lodge';
+    position: absolute;
+    top: 100px;
+    left: -80px;
+    font-size: 80px;
+    letter-spacing: 10px;
+    opacity: .1;
+    font-weight: 500;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  .lodge-img-box {
+    width: 100%;
+    font-size: 0;
+    margin-top: 30px;
+  }
+  .lodge-img-box img {
+    width: 20%;
+  }
+  .lodge-japanese {
+    padding-bottom: 30px;
+  }
+  .lodge-english {
+    padding-bottom: 30px;
+  }
+  .foodlounge {
+    padding: 50px 0 30px 0;
+    background-color: #FFFFFF;
+  }
+  .foodlounge h2 {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  }
+  .foodlounge p {
+    font-size: 15px;
+  }
+  .foodlounge-header {
+    position: relative;
+  }
+  .foodlounge-header::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 2px;
+    background-color: #000000;
+    opacity: .8;
+    margin: 30px 0 50px 0;
+    position: absolute;
+    top: 30px;
+    right: 55px;
+  }
+  .foodlounge-header-img img {
+    width: 100%;
+  }
+  .foodlounge-text-area {
+    text-align: right;
+    position: relative;
+  }
+  .foodlounge-texts {
+    margin: 90px 0 90px 0;
+    background-color: #F8F8F8;
+    display: inline-block;
+    width: 75%;
+    padding: 22px;
+  }
+  .foodlounge-texts p {
+    text-align: left;
+    letter-spacing: 3px;
+    line-height: 24px;
+  }
+  .foodlounge-texts::before {
+    content: 'Food Atelier& Lounge';
+    position: absolute;
+    top: 260px;
+    left: -170px;
+    font-size: 35px;
+    letter-spacing: 5px;
+    opacity: .1;
+    font-weight: 500;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  .foodlounge-img-box {
+    width: 100%;
+    font-size: 0;
+    margin-top: 30px;
+  }
+  .foodlounge-img-box img {
+    width: 20%;
+  }
+  .foodlounge-japanese {
+    padding-bottom: 30px;
+  }
+  .foodlounge-english {
+    padding-bottom: 30px;
+  }
+  .interactive {
+    padding: 50px 0 30px 0;
+    background-color: #F8F8F8;
+  }
+  .interactive h2 {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  }
+  .interactive h2::after {
+    content: '- 体験プログラム -';
+    margin-left: 10px;
+    display: block;
+  }
+  .interactive p {
+    font-size: 15px;
+  }
+  .interactive-header {
+    position: relative;
+  }
+  .interactive-header::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 2px;
+    background-color: #000000;
+    opacity: .8;
+    margin: 70px 0 50px 0;
+    position: absolute;
+    top: 30px;
+    right: 55px;
+  }
+  .interactive-header-img img {
+    width: 100%;
+  }
+  .interactive-text-area {
+    text-align: right;
+    position: relative;
+  }
+  .interactive-texts {
+    margin: 60px 0 30px 0;
+    background-color: #FFFFFF;
+    display: inline-block;
+    width: 75%;
+    padding: 22px;
+  }
+  .interactive-texts p {
+    text-align: left;
+    letter-spacing: 3px;
+    line-height: 24px;
+  }
+  .interactive-texts::before {
+    content: 'Interactive';
+    position: absolute;
+    top: 180px;
+    left: -120px;
+    font-size: 60px;
+    letter-spacing: 5px;
+    opacity: .1;
+    font-weight: 500;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  .interactive-img-box {
+    width: 100%;
+    font-size: 0;
+    margin-top: 30px;
+  }
+  .interactive-img-box img {
+    width: 20%;
+  }
+  .interactive-japanese {
+    padding-bottom: 30px;
+  }
+  .interactive-english {
+    padding-bottom: 30px;
+  }
+  .about-second {
+    padding: 150px 0 50px 0;
+    text-align: center;
+    font-size: 15px;
+  }
+  .about-second p {
+    line-height: 30px;
+    padding-bottom: 20px;
+  }
+  .about-second-texts {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .contact {
+    padding: 50px 0 30px 0;
+    position: relative;
+    text-align: center;
+  }
+  .contact h2 {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  }
+  .contact h2::after {
+    content: '-お問い合わせ/ご予約-';
+    margin-left: 10px;
+    display: block;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .contact p {
+    font-size: 15px;
+  }
+  .contact a {
+    display: inline-block;
+    margin: 20px 0 5px 0;
+  }
+  .contact-container {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .contact-container::before {
+    content: '';
+    background-color: #F8F8F8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 95%;
+    z-index: -1;
+  }
+  .contact-anchor-child::after {
+    content: ' -お問い合わせ- ';
+  }
+  .booking-anchor-child::after {
+    content: ' -ご予約- ';
+  }
+  .booking {
+    display: none;
+  }
+  footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 13px;
+  }
+  footer img {
+    width: 200px;
+    margin-bottom: 30px;
+  }
+  .footer-contact {
+    display: none;
+  }
+  .footer-iroha {
+    display: none;
+  }
+  .footer-bottom {
+    background-color: #333333;
+  }
+  .address {
+    margin-top: 40px;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding-bottom: 40px;
+  }
+  .footer-copy {
+    margin: 0;
+    font-size: 10px;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    color: #FFFFFF;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .header-bg {
+    background-color: transparent;
+    position: absolute;
+  }
+  .header-bg img {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 400px;
+  }
+  .header-bg-color {
+    background-color: transparent;
+  }
+  header::before {
+    display: none;
+  }
+  .header-contents {
+    background-color: #000000;
+    color: #ffffff;
+    position: absolute;
+    opacity: .8;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+  }
+  .header-contents h2 {
+    padding: 15px 0 0 15px;
+    font-size: 19px;
+    margin: 0;
+    letter-spacing: 3px;
+    font-weight: 400;
+  }
+  .header-contents span {
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+  .header-contents ul {
+    font-size: 15px;
+  }
+  .humburger-show {
+    top: 15px;
+    width: 60px;
+    height: 45px;
+  }
+  .sns-share {
+    text-align: right;
+    margin-top: -70px;
+  }
+  .sns-share i {
+    font-size: 35px;
+    padding: 0 20px;
+  }
+  .bg {
+    height: 524px;
+  }
+  .bg .header-bg.bg--1 {
+    background-image: url(../images/slide/slide1.png);
+    background-position-y: center;
+    background-position-x: 75%;
+  }
+  .bg .header-bg.bg--2 {
+    background-image: url(../images/slide/slide2.png);
+    background-position-y: center;
+    background-position-x: 75%;
+  }
+  .about {
+    padding: 50px 0 280px 0;
+    position: relative;
+  }
+  .about h2 {
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .about p {
+    margin-left: -20px;
+    padding-bottom: 30px;
+  }
+  .about::after {
+    content: none;
+  }
+  .about-texts {
+    margin-top: 20px;
+  }
+  .about-texts .br {
+    display: none;
+  }
+  .about-texts .br-second {
+    display: none;
+  }
+  .about-texts .br-third {
+    display: none;
+  }
+  .about-japanese {
+    display: inline;
+  }
+  .about-english {
+    display: none;
+  }
+  .about-photos {
+    width: 70%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .about-photo-first {
+    position: relative;
+  }
+  .about-img1 {
+    width: 40%;
+    max-width: 200px;
+    min-width: 140px;
+    position: absolute;
+    top: 120px;
+    left: 30px;
+    z-index: 1;
+  }
+  .about-img2 {
+    width: 70%;
+    max-width: 340px;
+    min-width: 250px;
+  }
+  .anchor {
+    position: relative;
+  }
+  .anchor-child {
+    position: absolute;
+    bottom: 60px;
+    right: 5%;
+  }
+  .lodge {
+    background-color: #F8F8F8;
+  }
+  .lodge h2 {
+    font-size: 35px;
+    text-align: left;
+    margin-left: 40px;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
+  }
+  .lodge h2::after {
+    font-size: 30px;
+  }
+  .lodge-header::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #000000;
+    opacity: .8;
+    margin: 30px 0 50px 0;
+    position: absolute;
+    top: 30px;
+    width: 20%;
+    left: 190px;
+  }
+  .lodge-header-img {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .lodge-text-area {
+    text-align: right;
+    position: relative;
+  }
+  .lodge-texts {
+    margin: 0 30px 0 0;
+  }
+  .lodge-texts::before {
+    top: 0;
+    left: -80px;
+    font-size: 100px;
+  }
+  .foodlounge {
+    padding: 50px 0 30px 0;
+    background-color: #FFFFFF;
+  }
+  .foodlounge h2 {
+    font-size: 35px;
+    font-weight: 500;
+    margin-left: 40px;
+    text-align: left;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
+  }
+  .foodlounge p {
+    font-size: 15px;
+  }
+  .foodlounge-header {
+    position: relative;
+  }
+  .foodlounge-header::after {
+    content: none;
+  }
+  .foodlounge-header-img {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 0;
+  }
+  .foodlounge-header-img img {
+    width: 100%;
+  }
+  .foodlounge-text-area {
+    text-align: right;
+    position: relative;
+  }
+  .foodlounge-texts {
+    margin: 40px 30px 30px 0;
+    background-color: #ffffff;
+    display: inline-block;
+    width: 75%;
+    padding: 22px;
+  }
+  .foodlounge-texts p {
+    text-align: left;
+    letter-spacing: 3px;
+    line-height: 24px;
+  }
+  .foodlounge-texts::before {
+    top: 260px;
+    left: -230px;
+    font-size: 50px;
+    letter-spacing: 5px;
+    opacity: .1;
+    font-weight: 500;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    z-index: 0;
+  }
+  .interactive {
+    padding: 50px 0 30px 0;
+    background-color: #F8F8F8;
+  }
+  .interactive h2 {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
+  }
+  .interactive h2::after {
+    content: '- 体験プログラム -';
+    margin-left: 10px;
+    display: inline-block;
+  }
+  .interactive p {
+    font-size: 15px;
+  }
+  .interactive a {
+    margin-right: 20px;
+  }
+  .interactive-header {
+    position: relative;
+  }
+  .interactive-header::after {
+    content: none;
+  }
+  .interactive-header-img {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 0;
+  }
+  .interactive-header-img img {
+    width: 100%;
+  }
+  .interactive-text-area {
+    text-align: right;
+    position: relative;
+  }
+  .interactive-texts {
+    margin: 60px 10px 30px 0;
+    background-color: #F8F8F8;
+    display: inline-block;
+    width: 75%;
+    padding: 22px;
+  }
+  .interactive-texts p {
+    text-align: left;
+    letter-spacing: 3px;
+    line-height: 24px;
+  }
+  .interactive-texts::before {
+    content: 'Interactive';
+    position: absolute;
+    top: 60px;
+    left: -50px;
+    font-size: 50px;
+    letter-spacing: 5px;
+    opacity: .1;
+    font-weight: 500;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  .interactive-img-box {
+    width: 100%;
+    font-size: 0;
+    margin-top: 30px;
+  }
+  .interactive-img-box img {
+    width: 20%;
+  }
+  .interactive-japanese {
+    padding-bottom: 30px;
+  }
+  .interactive-english {
+    padding-bottom: 30px;
+  }
+  .about-second {
+    display: none;
+  }
+  .contact {
+    padding: 50px 0 20px 0;
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .contact h2 {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: left;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    margin-left: -24px;
+    margin-bottom: 20px;
+  }
+  .contact h2::after {
+    content: '-お問い合わせ-';
+    margin-left: 10px;
+    display: inline;
+    font-size: 25px;
+  }
+  .contact p {
+    font-size: 15px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  .contact a {
+    display: inline-block;
+    margin: 20px 0 5px 0;
+  }
+  .contact .booking-anchor {
+    display: none;
+  }
+  .contact-anchor {
+    text-align: right;
+    margin-right: -20px;
+  }
+  .contact-anchor-child {
+    padding: 20px 60px;
+  }
+  .contact-anchor::after {
+    content: none;
+  }
+  .contact-container {
+    width: 70%;
+  }
+  .contact-container::before {
+    content: '';
+    background-color: #F8F8F8;
+    position: absolute;
+    margin: 30px auto;
+    left: 0;
+    width: 70%;
+    height: 95%;
+    z-index: -1;
+  }
+  .booking {
+    display: block;
+    padding: 50px 0 20px 0;
+    position: relative;
+    text-align: center;
+  }
+  .booking h2 {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: left;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    margin-left: -24px;
+    margin-bottom: 20px;
+  }
+  .booking h2::after {
+    content: '-ご予約-';
+    margin-left: 10px;
+    display: inline;
+    font-size: 25px;
+  }
+  .booking p {
+    font-size: 15px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  .booking a {
+    display: inline-block;
+    margin: 20px 0 5px 0;
+  }
+  .booking-anchor {
+    text-align: right;
+    margin-right: -20px;
+  }
+  .booking-anchor-child {
+    padding: 20px 60px;
+  }
+  .booking-anchor-child::after {
+    content: none;
+  }
+  .booking-container {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .booking-container::before {
+    content: '';
+    background-color: #F8F8F8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 70%;
+    height: 95%;
+    margin: 30px auto 0 auto;
+    z-index: -1;
+  }
+  footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 12px;
+    margin-top: 80px;
+    padding-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  footer img {
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    margin-bottom: 0;
+    width: 30%;
+    height: 30%;
+  }
+  .footer-info {
+    position: relative;
+    display: inline-block;
+    margin-top: 25px;
+  }
+  .footer-info p {
+    font-size: 10px;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  .footer-iroha {
+    margin-top: 30px;
+    display: inline-block;
+    font-size: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .footer-iroha p {
+    margin: 0;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .footer-contact {
+    display: inline;
+  }
+  .address {
+    margin-top: -20px;
+    margin-left: -30px;
+    padding: 0;
+    text-align: left;
+  }
+  .footer-copy {
+    margin: 0;
+    font-size: 2px;
+    letter-spacing: 1px;
+    padding: 10px 0;
+  }
+  .sns-share {
+    position: absolute;
+    bottom: -20px;
+    right: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .sns-share i {
+    font-size: 24px;
+    padding: 0 5px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    padding: 100px 0 190px 0;
+  }
+  .about h2 {
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 20px #707070;
+  }
+  .about p {
+    font-size: 15px;
+  }
+  .about::after {
+    content: '';
+    left: 0;
+    margin: 100px auto 0 auto;
+    width: 60%;
+    height: 50%;
+  }
+  .about-texts {
+    margin-top: 20px;
+    width: 40%;
+    margin-left: 60px;
+  }
+  .about-texts .br {
+    display: inline-block;
+  }
+  .about-texts .br-second {
+    display: inline-block;
+  }
+  .about-texts .br-third {
+    display: inline-block;
+  }
+  .about-texts .br-forth {
+    display: none;
+  }
+  .about-img1 {
+    width: 60%;
+    top: 60px;
+    left: 35%;
+  }
+  .about-photo-second {
+    position: relative;
+  }
+  .about-img2 {
+    width: 60%;
+    max-width: 450px;
+    text-align: right;
+    position: absolute;
+    top: -140px;
+    right: 0;
+  }
+  .anchor {
+    text-align: left;
+    margin: 30px 20px 0 130px;
+    position: static;
+  }
+  .anchor-child {
+    position: static;
+  }
+  .about-photos {
+    position: relative;
+    top: -100px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    width: 90%;
+  }
+  .lodge-img-container {
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 50px;
+  }
+  .lodge-header-img {
+    display: inline-block;
+    width: 50%;
+    margin: 0;
+  }
+  .lodge-header-img img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .lodge-text-area {
+    width: 35%;
+  }
+  .lodge-texts {
+    position: absolute;
+    top: 70px;
+    left: 150px;
+    display: inline-block;
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 10px 10px;
+    opacity: .8;
+  }
+  .lodge-texts br {
+    display: none;
+  }
+  .lodge-texts p {
+    letter-spacing: 1px;
+    line-height: 15px;
+    font-size: 10px;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    padding-bottom: 15px;
+    margin-right: 30px;
+    width: 100%;
+    opacity: 1;
+  }
+  .lodge-texts .read-more {
+    font-size: 6px;
+    padding: 8px 20px;
+    opacity: 1;
+  }
+  .lodge-texts .read-more a {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  .lodge-texts::before {
+    top: -100px;
+    left: -200px;
+    opacity: .1;
+    font-weight: 500;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  .lodge-img-box {
+    display: inline-block;
+    width: 80%;
+    font-size: 0;
+    margin-top: 40px;
+  }
+  .lodge-img-box img {
+    width: 20%;
+  }
+  .foodlounge-img-container {
+    position: relative;
+    text-align: left;
+    margin-top: 80px;
+    margin-left: 150px;
+  }
+  .foodlounge-header-img {
+    display: inline-block;
+    width: 50%;
+    margin: 0;
+  }
+  .foodlounge-header-img img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .foodlounge-text-area {
+    text-align: right;
+    position: relative;
+    width: 35%;
+  }
+  .foodlounge-texts {
+    position: absolute;
+    top: -30px;
+    right: -150%;
+    margin: 60px 0 30px 0;
+    display: inline-block;
+    background-color: #f8f8f8;
+    width: 100%;
+    padding: 20px 10px;
+    opacity: .8;
+    z-index: 1;
+  }
+  .foodlounge-texts br {
+    display: none;
+  }
+  .foodlounge-texts p {
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 15px;
+    font-size: 10px;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    padding-bottom: 15px;
+    margin-right: 30px;
+    width: 100%;
+    opacity: 1;
+  }
+  .foodlounge-texts .read-more {
+    font-size: 6px;
+    padding: 8px 20px;
+    opacity: 1;
+  }
+  .foodlounge-texts .read-more a {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  .foodlounge-texts::before {
+    content: 'Food Atelier& Lounge';
+    position: absolute;
+    top: 50%;
+    left: -550px;
+    font-size: 30px;
+    opacity: .1;
+    font-weight: 500;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  .foodlounge-img-box {
+    display: inline-block;
+    width: 80%;
+    font-size: 0;
+    margin-top: 40px;
+  }
+  .foodlounge-img-box img {
+    width: 20%;
+  }
+  .interactive h2 {
+    text-align: left;
+    margin-left: 80px;
+  }
+  .interactive-img-container {
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 50px;
+  }
+  .interactive-header-img {
+    display: inline-block;
+    width: 50%;
+    margin: 0;
+  }
+  .interactive-header-img img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .interactive-text-area {
+    text-align: right;
+    position: relative;
+    width: 35%;
+    z-index: 1;
+  }
+  .interactive-texts {
+    position: absolute;
+    top: 50px;
+    left: 45%;
+    margin: 60px 0 30px 0;
+    display: inline-block;
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 20px 10px;
+    opacity: .8;
+  }
+  .interactive-texts br {
+    display: none;
+  }
+  .interactive-texts p {
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 15px;
+    font-size: 10px;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    padding-bottom: 15px;
+    margin-right: 30px;
+    width: 100%;
+    opacity: 1;
+  }
+  .interactive-texts .read-more {
+    font-size: 6px;
+    padding: 8px 20px;
+    opacity: 1;
+  }
+  .interactive-texts .read-more a {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  .interactive-texts::before {
+    content: 'Interactive';
+    position: absolute;
+    top: -80px;
+    left: -200px;
+    font-size: 50px;
+    opacity: .1;
+    font-weight: 500;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  .interactive-img-box {
+    display: inline-block;
+    width: 80%;
+    font-size: 0;
+    margin-top: 40px;
+  }
+  .interactive-img-box img {
+    width: 20%;
+  }
+  .about-second {
+    display: block;
+  }
+  .contact-booking {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact {
+    width: 50%;
+    font-size: 10px;
+  }
+  .contact p {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    margin: 0;
+  }
+  .contact a {
+    margin: 0;
+  }
+  .contact-anchor-child::after {
+    content: none;
+  }
+  .booking {
+    width: 50%;
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+  .booking p {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    margin: 0;
+  }
+  .booking a {
+    margin: 0;
+  }
+  footer img {
+    width: 20%;
+    margin-left: 50px;
+  }
+  .footer-info {
+    width: 50%;
+    margin-left: 100px;
+  }
+  .footer-iroha {
+    width: 30%;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    position: relative;
+    padding: 20px 40px;
+    height: auto !important;
+  }
+  header img {
+    display: block;
+    height: 30px;
+  }
+  header h2 {
+    padding: 0;
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    background-image: url(../images/header/header-bg);
+    background-position-x: 60%;
+    background-position-x: 50%;
+  }
+  nav {
+    position: absolute;
+    right: 0;
+  }
+  ul {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    list-style: none;
+    text-align: center;
+  }
+  li {
+    font-size: 12px;
+    padding: 0 40px;
+  }
+  .humburger-show {
+    display: none;
+  }
+  .header-bg {
+    width: 100%;
+    margin-top: -103px;
+    height: 850px;
+    max-width: 100%;
+  }
+  .header-bg img {
+    width: 500px;
+  }
+  .header-contents {
+    display: none;
+  }
+  .bg {
+    height: 660px;
+  }
+  .about {
+    padding-bottom: 280px;
+  }
+  .about-texts {
+    margin-left: 180px;
+  }
+  .about-texts .read-more {
+    margin-left: 30px;
+  }
+  .about-img1 {
+    position: absolute;
+    width: 42%;
+    max-width: 475px;
+    top: 50px;
+    left: 58%;
+  }
+  .about-photo-first {
+    position: static;
+  }
+  .about-photo-second {
+    position: static;
+  }
+  .about-img2 {
+    top: -300px;
+  }
+  .about-photos {
+    position: relative;
+    top: -100px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    width: 90%;
+  }
+  .lodge-texts {
+    top: 90px;
+    left: 180px;
+    padding: 30px 50px 30px 20px;
+  }
+  .lodge-texts p {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .lodge-texts .read-more a {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .lodge-texts::before {
+    top: -120px;
+    left: -240px;
+  }
+  .foodlounge-texts::before {
+    left: -680px;
+  }
+  .interactive-texts {
+    top: 100px;
+    padding: 30px 10px;
+  }
+  .interactive-texts::before {
+    top: -50px;
+    left: -240px;
+  }
+  .about-second-texts {
+    width: 100%;
+  }
+  .about-second-texts .br-none {
+    display: none;
+  }
+  .about-second-texts .br {
+    display: block !important;
+  }
+  .footer-info {
+    width: 50%;
+    margin-left: 100px;
+  }
+  .footer-info p {
+    font-size: 15px;
+  }
+  .footer-iroha {
+    width: 30%;
+    margin-left: 30px;
+  }
+  .footer-iroha p {
+    font-size: 15px;
+  }
+  .address {
+    margin-top: 5px;
+    font-size: 20px;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    margin-left: -40px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

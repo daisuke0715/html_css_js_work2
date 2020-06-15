@@ -1,0 +1,533 @@
+
+.header-bg {
+    background-color: transparent;
+    position: absolute;
+    img {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        width: 400px;  
+    }
+}
+.header-bg-color {
+    background-color: transparent;
+}
+header::before{
+    display: none;
+}
+//ハンバーガーメニュー実装
+.header-contents {
+    background-color: $cBlack;
+    color: $cWhite;
+    position: absolute;
+    opacity: .8;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+
+    h2 {
+        padding: 15px 0 0 15px;
+        font-size: 19px;
+        margin: 0;
+        letter-spacing: 3px;
+        font-weight: 400;
+    }
+
+    span {
+        font-size: 13px;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+
+    ul {
+        font-size: 15px;
+    }
+}
+.humburger-show {
+    top: 15px;
+    width: 60px;
+    height: 45px;
+}
+
+.sns-share {
+    text-align: right;
+    margin-top: -70px;
+
+    i {
+        font-size: 35px;
+        padding: 0 20px;
+    }
+}
+.bg {
+    height: 524px;
+}
+//ハンバーガーメニュー実装
+
+// スライドショー実装
+.bg .header-bg.bg--1{
+    background-image: url(../images/slide/slide1.png);
+    background-position-y: center;
+    background-position-x: 75%;
+}
+.bg .header-bg.bg--2{
+    background-image: url(../images/slide/slide2.png);
+    background-position-y: center;
+    background-position-x: 75%;
+}
+// スライドショー実装
+
+
+
+.about {
+    padding: 50px 0 280px 0;
+    position: relative;
+    h2 {
+        text-align: left;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    p {
+        margin-left: -20px;
+        padding-bottom: 30px;
+    }
+}
+.about::after {
+    content: none;
+}
+.about-texts {
+    margin-top: 20px;
+    .br {
+        display: none;
+    }
+    .br-second {
+        display: none;
+    }
+    .br-third {
+        display: none;
+    }
+}
+.about-japanese {
+    display: inline;
+}
+.about-english {
+    display: none;
+}
+.about-photos {
+    width: 70%;
+    margin: 0 auto;
+    padding: 0;
+}
+.about-photo-first {
+    position: relative;
+}
+.about-img1 {
+    width: 40%;
+    max-width: 200px;
+    min-width: 140px;
+    position: absolute;
+    top: 120px;
+    left: 30px;
+    z-index: 1;
+}
+.about-img2 {
+    width: 70%;
+    max-width: 340px;
+    min-width: 250px;
+}
+.anchor {
+    position: relative;
+}
+.anchor-child {
+    position: absolute;
+    bottom: 60px;
+    right: 5%;
+
+}
+//about
+
+
+.lodge {
+    background-color: #F8F8F8;
+    h2 {
+        font-size: 35px;
+        text-align: left;
+        margin-left: 40px;
+        text-shadow: 5px 5px 2px rgba($color: #000000, $alpha: .2);
+    }
+    h2::after {
+        font-size: 30px;
+    }
+}
+.lodge-header::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #000000;
+    opacity: .8;
+    margin: 30px 0 50px 0;
+    position: absolute;
+    top: 30px;
+    width: 20%;
+    left: 190px; 
+}
+.lodge-header-img {
+    width: 90%;
+    margin: 0 auto;
+}
+.lodge-text-area {
+    text-align: right;
+    position: relative;
+}
+.lodge-texts {
+    margin: 0 30px 0 0;
+}
+.lodge-texts::before {
+    top: 0;
+    left: -80px;
+    font-size: 100px;
+}
+// lodge
+
+
+
+.foodlounge {
+    padding: 50px 0 30px 0;
+    background-color: #FFFFFF;
+    h2 {
+        font-size: 35px;
+        font-weight: 500;
+        margin-left: 40px;
+        text-align: left;
+        text-shadow: 5px 5px 2px rgba($color: #000000, $alpha: .2);
+    }
+    p {
+        font-size: 15px;
+    }
+}
+.foodlounge-header {
+    position: relative;
+}
+.foodlounge-header::after {
+    content: none;
+}
+.foodlounge-header-img {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 0;
+    img {
+        width: 100%;
+    }
+}
+.foodlounge-text-area {
+    text-align: right;
+    position: relative;
+}
+.foodlounge-texts {
+    margin: 40px 30px 30px 0;
+    background-color: #ffffff;
+    display: inline-block;
+    width: 75%;
+    padding: 22px;
+    p {
+        text-align: left;
+        letter-spacing: 3px;
+        line-height: 24px;
+    }
+}
+.foodlounge-texts::before {
+    top: 260px;
+    left: -230px;
+    font-size: 50px;
+    letter-spacing: 5px;
+    opacity: .1;
+    font-weight: 500;
+    transform: rotate(-90deg);
+    z-index: 0;
+}
+// foodlounge
+
+
+
+.interactive {
+    padding: 50px 0 30px 0;
+    background-color: #F8F8F8;
+    h2 {
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-align: center;
+        text-shadow: 5px 5px 2px rgba($color: #000000, $alpha: .2);
+    }
+    h2::after {
+        content: '- 体験プログラム -';
+        margin-left: 10px;
+        display: inline-block;
+    }
+    p {
+        font-size: 15px;
+    }
+
+    a {
+        margin-right: 20px;
+    }
+}
+.interactive-header {
+    position: relative;
+}
+.interactive-header::after {
+    content: none;
+}
+.interactive-header-img {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 0;
+    img {
+        width: 100%;
+    }
+}
+.interactive-text-area {
+    text-align: right;
+    position: relative;
+}
+.interactive-texts {
+    margin: 60px 10px 30px 0;
+    background-color: #F8F8F8;
+    display: inline-block;
+    width: 75%;
+    padding: 22px;
+    p {
+        text-align: left;
+        letter-spacing: 3px;
+        line-height: 24px;
+    }
+}
+.interactive-texts::before {
+    content: 'Interactive';
+    position: absolute;
+    top: 60px;
+    left: -50px;
+    font-size: 50px;
+    letter-spacing: 5px;
+    opacity: .1;
+    font-weight: 500;
+    transform: rotate(-90deg);
+}
+.interactive-img-box {
+    width: 100%;
+    font-size: 0;
+    margin-top: 30px;
+    img {
+        width: 20%;
+    }
+}
+.interactive-japanese {
+    padding-bottom: 30px;
+}
+.interactive-english {
+    padding-bottom: 30px;
+}
+// interactive
+
+
+.about-second {
+    display: none;
+}
+// about-second
+
+
+.contact {
+    padding: 50px 0 20px 0;
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+    h2 {
+        font-size: 25px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-align: left;
+        text-shadow: 3px 3px 3px rgba($color: #000000, $alpha: .2);
+        margin-left: -24px;
+        margin-bottom: 20px;
+    }
+    h2::after {
+        content: '-お問い合わせ-';
+        margin-left: 10px;
+        display: inline;
+        font-size: 25px;
+    }
+    p {
+        font-size: 15px;
+        width: 70%;
+        margin: 0 auto;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    a {
+        display: inline-block;
+        margin: 20px 0 5px 0;
+    }
+    .booking-anchor {
+        display: none;
+    }
+}
+.contact-anchor {
+    text-align: right;
+    margin-right: -20px;
+}
+.contact-anchor-child {
+    padding: 20px 60px;
+}
+.contact-anchor::after {
+    content: none;
+}
+.contact-container {
+    width: 70%;
+}
+.contact-container::before {
+    content: '';
+    background-color: #F8F8F8;
+    position: absolute;
+    margin: 30px auto;
+    left: 0;
+    width: 70%;
+    height: 95%;
+    z-index: -1;
+}
+// contact
+
+
+.booking {
+    display: block;
+    padding: 50px 0 20px 0;
+    position: relative;
+    text-align: center;
+    h2 {
+        font-size: 25px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-align: left;
+        text-shadow: 3px 3px 3px rgba($color: #000000, $alpha: .2);
+        margin-left: -24px;
+        margin-bottom: 20px;
+    }
+    h2::after {
+        content: '-ご予約-';
+        margin-left: 10px;
+        display: inline;
+        font-size: 25px;
+    }
+    p {
+        font-size: 15px;
+        width: 70%;
+        margin: 0 auto;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    a {
+        display: inline-block;
+        margin: 20px 0 5px 0;
+    }
+}
+.booking-anchor {
+    text-align: right;
+    margin-right: -20px;
+}
+.booking-anchor-child {
+    padding: 20px 60px;
+}
+.booking-anchor-child::after {
+    content: none;
+}
+.booking-container {
+    width: 70%;
+    margin: 0 auto;
+}
+.booking-container::before {
+    content: '';
+    background-color: #F8F8F8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 70%;
+    height: 95%;
+    margin: 30px auto 0 auto;
+    z-index: -1;
+}
+// booking
+
+
+
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 12px;
+    margin-top: 80px;
+    padding-bottom: 50px;
+    display: flex;
+    width: 100%;
+    img {
+        box-sizing: content-box;
+        margin-bottom: 0;
+        width: 30%;
+        height: 30%;
+    }
+}
+.footer-info {
+    position: relative;
+    display: inline-block;
+    margin-top: 25px;
+    p  {
+        font-size: 10px;
+        transform: scale(0.6);
+    }
+}
+.footer-iroha {
+    margin-top: 30px;
+    display: inline-block;
+    font-size: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    p {
+        margin: 0;
+        transform: scale(.8);
+    }
+}
+.footer-contact {
+    display: inline;
+}
+.address{
+    margin-top: -20px;
+    margin-left: -30px;
+    padding: 0;
+    text-align: left;
+    
+
+}
+
+.footer-copy {
+    margin: 0;
+    font-size: 2px;
+    letter-spacing: 1px;
+    padding: 10px 0;
+}
+.sns-share {
+    position: absolute;
+    bottom: -20px;
+    right: 80px;
+    display: flex;
+    i {
+        font-size: 24px;
+        padding: 0 5px;
+    }
+
+}
+
+// footer
+
+

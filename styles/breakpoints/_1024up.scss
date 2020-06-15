@@ -1,0 +1,164 @@
+header {
+    position: relative;
+    padding: 20px 40px;
+    height: auto !important;
+
+    img {
+        display: block;
+        height: 30px;
+    }
+
+    h2 {
+        padding: 0;
+    }
+}
+header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    background-image: url(../images/header/header-bg);
+    background-position-x: 60%;
+    background-position-x: 50%;
+}
+nav {
+    position: absolute;
+    right: 0;
+}
+ul {
+    display: flex !important;
+    list-style: none;
+    text-align: center;
+}
+li {
+    font-size: 12px;
+    padding: 0 40px;
+    
+}
+.humburger-show {
+    display: none;
+}
+.header-bg {
+    width: 100%;
+    margin-top: -103px;
+    height: 850px;
+    max-width: 100%;
+
+
+    img {
+        width: 500px;
+    }
+}
+.header-contents {
+    display: none;
+}
+.bg {
+    height: 660px;
+}
+// header
+
+
+.about {
+    padding-bottom: 280px;
+}
+.about-texts {
+    margin-left: 180px;
+    .read-more {
+        margin-left: 30px;
+    }
+}
+.about-img1 {
+    position: absolute;
+    width: 42%;
+    max-width: 475px;
+    top: 50px;
+    left: 58%;
+}
+.about-photo-first {
+    position: static;
+}
+.about-photo-second {
+    position: static;
+}
+.about-img2 {
+    top: -300px;
+}
+.about-photos {
+    position: relative;
+    top: -100px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    width: 90%;
+}
+// about
+
+.lodge-texts {
+    top: 90px;
+    left: 180px;
+    padding: 30px 50px 30px 20px;
+    p {
+        transform: scale(1);
+    }
+    .read-more {
+        a {
+            transform: scale(1);
+        }
+    }
+}
+.lodge-texts::before {
+    top: -120px;
+    left: -240px;
+}
+//lodge
+
+
+.foodlounge-texts::before {
+    left: -680px;
+}
+// foodlounge
+
+.interactive-texts {
+    top: 100px;
+    padding: 30px 10px;
+}
+.interactive-texts::before {
+    top: -50px;
+    left: -240px;
+}
+// interactive
+
+
+
+.about-second-texts {
+    width: 100%;
+    .br-none {
+        display: none;
+    }
+    .br {
+        display: block !important;
+    }
+}
+// about-second
+
+.footer-info {
+    width: 50%;
+    margin-left: 100px;
+    p {
+        font-size: 15px;
+    }
+}
+.footer-iroha {
+    width: 30%;
+    margin-left: 30px;
+    p {
+        font-size: 15px;
+    }
+}
+.address {
+    margin-top: 5px;
+    font-size: 20px;
+    transform: scale(1.5);
+    margin-left: -40px;
+}

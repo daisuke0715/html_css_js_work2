@@ -1,0 +1,19 @@
+
+@import 'variables';   
+
+
+@media screen and (min-width: 375px) {
+    @import 'breakpoints/375up';
+}
+
+@media screen and (min-width: 414px) {
+    @import 'breakpoints/414up';
+}
+
+@media screen and (min-width: 768px) {
+    @import 'breakpoints/768up';
+}
+
+@media screen and (min-width: 1024px) {
+    @import 'breakpoints/1024up';
+}

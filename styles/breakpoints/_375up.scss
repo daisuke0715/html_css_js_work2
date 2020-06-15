@@ -1,0 +1,665 @@
+body {
+    font-family: Toppan Bunkyu Midashi Mincho;
+}
+
+header {
+    background-color: $cBlack;
+    color: $cWhite;
+    display: flex;
+    position: relative;
+    padding: 15px;
+    opacity: .8;
+    z-index: 1;
+    img {
+        display: block;
+    }
+    //ハンバーガーメニュー実装コード
+    .humburger-show {
+        position: absolute;
+        top: 18px;
+        right: 0;
+        padding: 10px 15px;
+        width: 50px;
+        height: 38px;
+        margin-right: 5px;
+    }
+    ul {
+        position: relative;
+        display: none;
+    }
+    .list-first::after {
+        content: '-いろはのこと-';
+        display: block;
+        font-size: 5px;
+        opacity: .7;
+        margin-top: 3px;
+    }
+    .list-second::after {
+        content: '-宿泊ロッジ-';
+        display: block;
+        font-size: 5px;
+        opacity: .7;
+        margin-top: 3px;
+    }
+    .list-third::after {
+        content: '-食工房/ラウンジ-';
+        display: block;
+        font-size: 5px;
+        opacity: .7;
+        margin-top: 3px;
+    }
+    .list-forth::after {
+        content: '-体験プログラム-';
+        display: block;
+        font-size: 5px;
+        opacity: .7;
+        margin-top: 3px;
+    }
+    .list-fifth::after {
+        content: '-ご予約-';
+        display: block;
+        font-size: 5px;
+        opacity: .7;
+        margin-top: 3px;
+    }
+    h2 {
+        font-size: 19px;
+        margin: 0;
+        letter-spacing: 3px;
+        font-weight: 400;
+    }
+    h2::after {
+        content: '-Yakushima Lodge  &  Food Atelier-';
+        display: block;
+        font-weight: 300;
+        letter-spacing: 0 !important;
+        font-size: 5px;
+        opacity: .7;
+        margin-top: 3px;
+    }
+    span {
+        font-size: 13px;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+}
+header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 650px;
+    background-color: #333333;
+    opacity: .3;
+    z-index: -3;
+}
+.header-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: 75%;
+    position: absolute;
+    width: 100%;
+    height: 650px;
+    top: 0;
+    left: 0;
+    img {
+        position: absolute;
+        top: 50%;
+        left: 51%;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+        width: 300px;
+    }
+}
+.header-bg.fadeout{
+    opacity: 0;
+    transition: 3s ease-in-out;
+}
+.header-bg.fadein{
+    opacity: 1;
+    transition: 3s ease-in-out;
+}
+.bg {
+    height: 574px;
+}
+.header-bg.bg--1{
+    background-image: url(../images/slide/slide1.png);
+    background-position: center;
+    background-size: cover;
+}
+.bg .header-bg.bg--2{
+    background-image: url(../images/slide/slide2.png);
+    background-position-x: center;
+    background-size: cover;
+}
+// ハンバーガーメニュー実装クラス
+.header-contents-hide {
+    display: none;
+}
+.header-contents {
+    background-color: $cBlack;
+    color: $cWhite;
+    position: absolute;
+    opacity: .8;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    width: 85%;
+    height: 100vh;
+    overflow: hidden;
+    h2 {
+        padding: 20px 0 0 30px;
+        font-size: 19px;
+        margin: 0;
+        letter-spacing: 3px;
+        font-weight: 400;
+    }
+    h2::after {
+        content: '-Yakushima Lodge  &  Food Atelier-';
+        display: block;
+        font-weight: 300;
+        letter-spacing: 0 !important;
+        font-size: 5px;
+        opacity: .7;
+        margin-top: 3px;
+    }
+    span {
+        font-size: 13px;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+    .fa-times {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 20px;
+    }
+    ul {
+        list-style: none;
+        text-align: center;
+        padding: 60px 0;
+    }
+    li {
+        padding-bottom: 30px;
+    }
+    .list-first::after {
+        content: '-いろはのこと-';
+        display: block;
+        font-size: 12px;
+        opacity: .7;
+        margin-top: 3px;
+    }
+    .list-second::after {
+        content: '-宿泊ロッジ-';
+        display: block;
+        font-size: 12px;
+        opacity: .7;
+        margin-top: 3px;
+    }
+    .list-third::after {
+        content: '-食工房/ラウンジ-';
+        display: block;
+        font-size: 12px;
+        opacity: .7;
+        margin-top: 3px;
+    }
+    .list-forth::after {
+        content: '-体験プログラム-';
+        display: block;
+        font-size: 12px;
+        opacity: .7;
+        margin-top: 3px;
+    }
+    .list-fifth::after {
+        content: '-ご予約-';
+        display: block;
+        font-size: 12px;
+        opacity: .7;
+        margin-top: 3px;
+    }
+}
+.header-hide {
+    display: none;
+}
+.sns-share {
+    i {
+        font-size: 40px;
+        padding: 0 40px 20px 40px;
+    }
+    
+}
+// ハンバーガーメニュー実装クラス
+// header
+
+
+
+
+
+.about {
+    padding: 100px 0 190px 0;
+    position: relative;
+    h2 {
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-bottom: 100px;
+        text-shadow: 0px 0px 20px #707070;
+    }
+    p {
+        font-size: 15px;
+    }
+}
+.about::after {
+    content: '';
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 50%;
+    height: 80%;
+    background-color: #707070;
+    opacity: .1;
+}
+.about-texts {
+    width: 70%;
+    margin: 0 auto;
+    .br-second {
+        display: none;
+    }
+    .br-third {
+        display: none;
+    }
+}
+.about-japanese {
+    display: none;
+}
+.about-img1 {
+    width: 60%;
+}
+.about-photo-second {
+    position: relative;
+}
+.about-img2 {
+    width: 70%;
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.anchor {
+    text-align: right;
+    margin: 30px 20px 0 0;
+}
+.read-more {
+    border: 2px solid #707070;
+    color: #000000;
+    text-decoration: none;
+    padding: 13px 25px;
+    font-size: 12px;
+    &:hover {
+        text-decoration: none;
+        color: #000000;
+
+    }
+}
+.about-photos {
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+// about
+
+
+.lodge {
+    padding: 50px 0 30px 0;
+    background-color: #F8F8F8;
+    h2 {
+        font-size: 25px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-align: center;
+        text-shadow: 3px 3px 3px rgba($color: #000000, $alpha: .2);
+    }
+    h2::after {
+        content: '- 宿泊ロッジ -';
+        margin-left: 10px;
+    }
+    p {
+        font-size: 15px;
+    }
+}
+.lodge-header {
+    position: relative;
+}
+.lodge-header::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 2px;
+    background-color: #000000;
+    opacity: .8;
+    margin: 30px 0 50px 0;
+    position: absolute;
+    top: 30px;
+    right: 55px;
+}
+.lodge-header-img {
+    width: 100%;
+    img {
+        width: 100%;
+    }
+}
+.lodge-text-area {
+    text-align: right;
+    position: relative;
+}
+.lodge-texts {
+    margin: 60px 0 30px 0;
+    background-color: #FFFFFF;
+    display: inline-block;
+    width: 75%;
+    padding: 22px;
+    p {
+        text-align: left;
+        letter-spacing: 3px;
+        line-height: 24px;
+    }
+}
+.lodge-texts::before {
+    content: 'Lodge';
+    position: absolute;
+    top: 100px;
+    left: -80px;
+    font-size: 80px;
+    letter-spacing: 10px;
+    opacity: .1;
+    font-weight: 500;
+    transform: rotate(-90deg);
+}
+.lodge-img-box {
+    width: 100%;
+    font-size: 0;
+    margin-top: 30px;
+    img {
+        width: 20%;
+    }
+}
+.lodge-japanese {
+    padding-bottom: 30px;
+}
+.lodge-english {
+    padding-bottom: 30px;
+}
+// lodge
+
+
+
+.foodlounge {
+    padding: 50px 0 30px 0;
+    background-color: #FFFFFF;
+    h2 {
+        font-size: 25px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-align: center;
+        text-shadow: 3px 3px 3px rgba($color: #000000, $alpha: .2);
+    }
+    p {
+        font-size: 15px;
+    }
+}
+.foodlounge-header {
+    position: relative;
+}
+.foodlounge-header::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 2px;
+    background-color: #000000;
+    opacity: .8;
+    margin: 30px 0 50px 0;
+    position: absolute;
+    top: 30px;
+    right: 55px;
+}
+.foodlounge-header-img {
+    img {
+        width: 100%;
+    }
+}
+.foodlounge-text-area {
+    text-align: right;
+    position: relative;
+}
+.foodlounge-texts {
+    margin: 90px 0 90px 0;
+    background-color: #F8F8F8;
+    display: inline-block;
+    width: 75%;
+    padding: 22px;
+    p {
+        text-align: left;
+        letter-spacing: 3px;
+        line-height: 24px;
+    }
+}
+.foodlounge-texts::before {
+    content: 'Food Atelier& Lounge';
+    position: absolute;
+    top: 260px;
+    left: -170px;
+    font-size: 35px;
+    letter-spacing: 5px;
+    opacity: .1;
+    font-weight: 500;
+    transform: rotate(-90deg);
+}
+.foodlounge-img-box {
+    width: 100%;
+    font-size: 0;
+    margin-top: 30px;
+    img {
+        width: 20%;
+    }
+}
+.foodlounge-japanese {
+    padding-bottom: 30px;
+}
+.foodlounge-english {
+    padding-bottom: 30px;
+}
+// foodlounge
+
+
+
+
+
+.interactive {
+    padding: 50px 0 30px 0;
+    background-color: #F8F8F8;
+    h2 {
+        font-size: 25px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-align: center;
+        text-shadow: 3px 3px 3px rgba($color: #000000, $alpha: .2);
+    }
+    h2::after {
+        content: '- 体験プログラム -';
+        margin-left: 10px;
+        display: block;
+    }
+    p {
+        font-size: 15px;
+    }
+}
+.interactive-header {
+    position: relative;
+}
+.interactive-header::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 2px;
+    background-color: #000000;
+    opacity: .8;
+    margin: 70px 0 50px 0;
+    position: absolute;
+    top: 30px;
+    right: 55px;
+}
+.interactive-header-img {
+    img{
+        width: 100%;
+    }
+}
+.interactive-text-area {
+    text-align: right;
+    position: relative;
+}
+.interactive-texts {
+    margin: 60px 0 30px 0;
+    background-color: #FFFFFF;
+    display: inline-block;
+    width: 75%;
+    padding: 22px;
+    p {
+        text-align: left;
+        letter-spacing: 3px;
+        line-height: 24px;
+    }
+}
+.interactive-texts::before {
+    content: 'Interactive';
+    position: absolute;
+    top: 180px;
+    left: -120px;
+    font-size: 60px;
+    letter-spacing: 5px;
+    opacity: .1;
+    font-weight: 500;
+    transform: rotate(-90deg);
+}
+.interactive-img-box {
+    width: 100%;
+    font-size: 0;
+    margin-top: 30px;
+    img {
+        width: 20%;
+    }
+}
+.interactive-japanese {
+    padding-bottom: 30px;
+}
+.interactive-english {
+    padding-bottom: 30px;
+}
+// interactive
+
+
+.about-second {
+    padding: 150px 0 50px 0;
+    text-align: center;
+    font-size: 15px;
+
+    p {
+        line-height: 30px;
+        padding-bottom: 20px;
+    }
+}
+.about-second-texts {
+    width: 90%;
+    margin: 0 auto;
+}
+// about-second
+
+
+.contact {
+    padding: 50px 0 30px 0;
+    position: relative;
+    text-align: center;
+    h2 {
+        font-size: 25px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-align: center;
+        text-shadow: 3px 3px 3px rgba($color: #000000, $alpha: .2);
+    }
+    h2::after {
+        content: '-お問い合わせ/ご予約-';
+        margin-left: 10px;
+        display: block;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    p {
+        font-size: 15px;
+    }
+    a {
+        display: inline-block;
+        margin: 20px 0 5px 0;
+    }
+}
+.contact-container {
+    width: 50%;
+    margin: 0 auto;
+}
+.contact-container::before {
+    content: '';
+    background-color: #F8F8F8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 95%;
+    z-index: -1;
+}
+.contact-anchor-child::after {
+    content: ' -お問い合わせ- ';
+}
+.booking-anchor-child::after {
+    content: ' -ご予約- ';
+}
+// contact
+
+
+.booking {
+    display: none;
+}
+// booking
+
+
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 13px;
+    img {
+        width: 200px;
+        margin-bottom: 30px;
+    }
+}
+.footer-contact {
+    display: none;
+}
+.footer-iroha {
+    display: none;
+}
+.footer-bottom {
+    background-color: #333333;
+}
+.address {
+    margin-top: 40px;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding-bottom: 40px;
+}
+.footer-copy {
+    margin: 0;
+    font-size: 10px;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    color: #FFFFFF;
+    text-align: center;
+}
